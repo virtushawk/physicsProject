@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="841.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.photoButtonController">
+   <children>
+      <VBox prefHeight="576.0" prefWidth="174.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="photoButton" alignment="CENTER" mnemonicParsing="false" onMouseClicked="#clickOnPhotoButton" prefHeight="42.0" prefWidth="180.0" styleClass="buttonPhoto" text="Фотопроводимость" textFill="WHITE">
+               <font>
+                  <Font name="Droid Sans" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="hollaButton" alignment="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#clickOnHollaButton" prefHeight="42.0" prefWidth="180.0" styleClass="buttonPhoto" text="Эффект Холла" textFill="WHITE">
+               <font>
+                  <Font name="Droid Sans" size="13.0" />
+               </font>
+            </Button>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </VBox>
+      <AnchorPane fx:id="photoView" layoutX="175.0" prefHeight="576.0" prefWidth="667.0" styleClass="view" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="-1.2000000000000455" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="667.0" text="Фотопроводимость" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Droid Sans" size="22.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="hollaView" layoutX="175.0" prefHeight="576.0" prefWidth="667.0" styleClass="view" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="-1.2000000000000455" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" layoutY="-1.0" prefHeight="34.0" prefWidth="667.0" text="Эффект Холла" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Droid Sans" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="67.0" prefHeight="42.0" prefWidth="667.0" text="Рассчитать значение коэффициента Холла" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="67.0">
+               <font>
+                  <Font name="Droid Sans Mono" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" layoutX="250.0" layoutY="109.0" prefHeight="143.0" prefWidth="196.0" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="221.0" AnchorPane.topAnchor="109.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/RHooll..JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="-1.0" layoutY="238.0" prefHeight="100.0" prefWidth="667.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="238.0">
+               <children>
+                  <Label text="Uxn = ">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UTextField" prefHeight="26.0" prefWidth="96.0" />
+                  <Label text="  В, a = ">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="aTextField" prefHeight="26.0" prefWidth="114.0" />
+                  <Label text=" м, In = ">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="ITextField" prefHeight="26.0" prefWidth="100.0" />
+                  <Label text=" А,  B = ">
+                     <font>
+                        <Font name="Droid Sans" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="BTextField" prefHeight="26.0" prefWidth="112.0" />
+                  <Label text=" Тс">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutX="296.0" layoutY="325.0" prefHeight="108.0" prefWidth="76.0" AnchorPane.leftAnchor="296.0" AnchorPane.rightAnchor="295.20000000000005" AnchorPane.topAnchor="325.0">
+               <children>
+                  <Button fx:id="RResultButton" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnRResultButon" text="Рассчитать" />
+                  <TextField fx:id="RResultTextField" editable="false" maxWidth="100.0" minWidth="100.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="425.0" prefHeight="42.0" prefWidth="667.0" text="Рассчитать удельную проводимость" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="425.0">
+               <font>
+                  <Font name="Droid Sans Mono" size="15.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="233.0" layoutY="467.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.leftAnchor="233.0" AnchorPane.rightAnchor="234.20000000000005" AnchorPane.topAnchor="467.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/coefProvo.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

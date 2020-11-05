@@ -1,0 +1,18 @@
+.sidebar {
+ -fx-background-color:#2D3039;
+}
+.buttonPhoto {
+ -fx-background-color:#2D3039;
+}
+.buttonPhoto:hover{
+-fx-background-color:#000000;
+}
+.buttonPhoto:pressed{
+-fx-background-color:#000000;
+}
+.buttonPressed{
+-fx-background-color:#000000;
+}
+.view{
+ -fx-background-color:#FEFCFD;
+}
