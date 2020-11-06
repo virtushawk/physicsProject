@@ -24,6 +24,13 @@ public class photoButtonController  {
     public TextField RproTextField;
     public Button proResultButton;
     public TextField proResultTextField;
+    public TextField sigmaPodTextField;
+    public TextField RpodTextField;
+    public TextField podResultTextField;
+    public Button podResultButton;
+    public TextField AnTextField;
+    public TextField RnTextField;
+    public TextField nResultTextField;
 
     @FXML
     AnchorPane photoView;
@@ -70,6 +77,61 @@ public class photoButtonController  {
             Double R = U * a / (I * B);
             DecimalFormat df = new DecimalFormat("0.00##");
             RResultTextField.setText(df.format(R));
+        }
+
+    }
+
+    public void clickOnproResultButon(MouseEvent mouseEvent) {
+        double l = Double.parseDouble(IproTextField.getText());
+        double a = Double.parseDouble(aproTextField.getText());
+        double b = Double.parseDouble(bproTextField.getText());
+        double R = Double.parseDouble(RproTextField.getText());
+        if(a==0)
+        {
+            proResultTextField.setText("error : a cannot be zero");
+        }
+        else if (b==0)
+        {
+            proResultTextField.setText("error: b cannot be zero");
+        }
+        else if(R == 0)
+        {
+            proResultTextField.setText("error: R cannot be zero");
+        }
+        else {
+            Double sigma = l / (a * b * R);
+            DecimalFormat df = new DecimalFormat("0.00##");
+            proResultTextField.setText(df.format(sigma));
+        }
+
+
+    }
+
+    public void clickOnPodResultButon(MouseEvent mouseEvent) {
+
+        double sigma = Double.parseDouble(sigmaPodTextField.getText());
+        double R = Double.parseDouble(RpodTextField.getText());
+
+        Double mu = sigma * R;
+        DecimalFormat df = new DecimalFormat("0.00##");
+        podResultTextField.setText(df.format(mu));
+
+    }
+
+    public void clickOnNResultButon(MouseEvent mouseEvent) {
+
+        double A = Double.parseDouble(AnTextField.getText());
+        double R = Double.parseDouble(RnTextField.getText());
+        if(R == 0)
+        {
+            nResultTextField.setText("error : Rxn cannot be zero");
+        }
+        else{
+            double e = -1.602;
+            double n = - A/(e*R);
+            DecimalFormat df = new DecimalFormat("0.00##");
+            nResultTextField.setText(df.format(n));
+
         }
 
     }

@@ -150,7 +150,7 @@
                   </HBox>
                   <VBox alignment="TOP_CENTER" layoutX="312.0" layoutY="676.0" prefHeight="108.0" prefWidth="76.0" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="312.79999999999995" AnchorPane.topAnchor="676.0">
                      <children>
-                        <Button fx:id="proResultButton" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnRResultButon" text="Рассчитать" />
+                        <Button fx:id="proResultButton" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnproResultButon" text="Рассчитать" />
                         <TextField fx:id="proResultTextField" editable="false" maxWidth="100.0" minWidth="100.0">
                            <VBox.margin>
                               <Insets top="10.0" />
@@ -179,13 +179,13 @@
                               <Font name="Droid Sans Bold" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="bproTextField1" prefHeight="26.0" prefWidth="100.0" />
+                        <TextField fx:id="sigmaPodTextField" prefHeight="26.0" prefWidth="100.0" />
                         <Label text="1/Oм *м,  R = ">
                            <font>
                               <Font name="Droid Sans" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="RproTextField1" prefHeight="26.0" prefWidth="112.0" />
+                        <TextField fx:id="RpodTextField" prefHeight="26.0" prefWidth="112.0" />
                         <Label text="Ом">
                            <font>
                               <Font name="Droid Sans Bold" size="12.0" />
@@ -195,8 +195,8 @@
                   </HBox>
                   <VBox alignment="TOP_CENTER" layoutX="312.0" layoutY="990.0" prefHeight="108.0" prefWidth="76.0" AnchorPane.leftAnchor="312.0" AnchorPane.rightAnchor="312.79999999999995" AnchorPane.topAnchor="990.0">
                      <children>
-                        <Button fx:id="proResultButton1" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnRResultButon" text="Рассчитать" />
-                        <TextField fx:id="proResultTextField1" editable="false" maxWidth="100.0" minWidth="100.0">
+                        <Button fx:id="podResultButton" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnPodResultButon" text="Рассчитать" />
+                        <TextField fx:id="podResultTextField" editable="false" maxWidth="100.0" minWidth="100.0">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
@@ -224,13 +224,13 @@
                               <Font name="Droid Sans Bold" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="bproTextField11" prefHeight="26.0" prefWidth="100.0" />
+                        <TextField fx:id="AnTextField" prefHeight="26.0" prefWidth="100.0" />
                         <Label text="  Rxn = ">
                            <font>
                               <Font name="Droid Sans" size="12.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="RproTextField11" prefHeight="26.0" prefWidth="112.0" />
+                        <TextField fx:id="RnTextField" prefHeight="26.0" prefWidth="112.0" />
                         <Label text="м^3/А*с">
                            <font>
                               <Font name="Droid Sans Bold" size="12.0" />
@@ -238,10 +238,10 @@
                         </Label>
                      </children>
                   </HBox>
-                  <VBox alignment="TOP_CENTER" layoutX="311.0" layoutY="1301.0" prefHeight="108.0" prefWidth="76.0">
+                  <VBox alignment="TOP_CENTER" layoutX="311.0" layoutY="1301.0" prefHeight="108.0" prefWidth="76.0" AnchorPane.leftAnchor="311.0" AnchorPane.rightAnchor="313.79999999999995" AnchorPane.topAnchor="1301.0">
                      <children>
-                        <Button fx:id="proResultButton11" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnRResultButon" text="Рассчитать" />
-                        <TextField fx:id="proResultTextField11" editable="false" maxWidth="100.0" minWidth="100.0">
+                        <Button fx:id="nResultButton" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnNResultButon" text="Рассчитать" />
+                        <TextField fx:id="nResultTextField" editable="false" maxWidth="100.0" minWidth="100.0">
                            <VBox.margin>
                               <Insets top="10.0" />
                            </VBox.margin>
