@@ -31,6 +31,11 @@ public class photoButtonController  {
     public TextField AnTextField;
     public TextField RnTextField;
     public TextField nResultTextField;
+    public TextField LPhotoTextField;
+    public TextField hvResultField;
+    public TextField UPhotoField;
+    public TextField IPhotoTextField;
+    public TextField EDSResultField;
 
     @FXML
     AnchorPane photoView;
@@ -134,5 +139,33 @@ public class photoButtonController  {
 
         }
 
+    }
+
+    public void clickOnhvResultButon(MouseEvent mouseEvent) {
+        double L = Double.parseDouble(LPhotoTextField.getText());
+        if(L==0){
+            hvResultField.setText("error : L cannot be 0");
+        }
+        else{
+            double hv = 1.24/L;
+            DecimalFormat df = new DecimalFormat("0.00##");
+            hvResultField.setText(df.format(hv));
+        }
+
+    }
+
+    public void clickOnEDSResultButon(MouseEvent mouseEvent) {
+
+        double U = Double.parseDouble(UPhotoField.getText());
+        double I = Double.parseDouble(IPhotoTextField.getText());
+        if(I==0)
+        {
+            EDSResultField.setText("error: I cannot be 0");
+        }
+        else {
+            double UEDS = U/I;
+            DecimalFormat df = new DecimalFormat("0.00##");
+            EDSResultField.setText(df.format(UEDS));
+        }
     }
 }

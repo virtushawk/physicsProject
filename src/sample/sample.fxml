@@ -26,15 +26,6 @@
             <DropShadow />
          </effect>
       </VBox>
-      <AnchorPane fx:id="photoView" layoutX="175.0" prefHeight="576.0" prefWidth="667.0" styleClass="view" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="-1.2000000000000455" AnchorPane.topAnchor="0.0">
-         <children>
-            <Label alignment="CENTER" prefHeight="34.0" prefWidth="667.0" text="Фотопроводимость" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <font>
-                  <Font name="Droid Sans" size="22.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
       <ScrollPane fx:id="hollaView" fitToHeight="true" fitToWidth="true" layoutX="174.0" prefHeight="576.0" prefWidth="667.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
          <content>
             <AnchorPane prefHeight="576.0" prefWidth="667.0" styleClass="view">
@@ -256,5 +247,94 @@
             </AnchorPane>
          </content>
       </ScrollPane>
+      <AnchorPane fx:id="photoView" layoutX="175.0" prefHeight="576.0" prefWidth="667.0" styleClass="view" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="175.0" AnchorPane.rightAnchor="-1.2000000000000455" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="34.0" prefWidth="667.0" text="Фотопроводимость" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Droid Sans" size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="74.0" prefHeight="42.0" prefWidth="670.0" text="Рассчитать энергию квантов" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="26.800000000000068">
+               <font>
+                  <Font name="Droid Sans Mono" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" layoutX="264.0" layoutY="116.0" prefHeight="143.0" prefWidth="196.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="262.20000000000005" AnchorPane.topAnchor="116.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/HV.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="30.0" layoutY="209.0" prefHeight="100.0" prefWidth="667.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="209.0">
+               <children>
+                  <Label text="L = ">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="LPhotoTextField" prefHeight="26.0" prefWidth="100.0" />
+                  <Label text="м" />
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutX="314.0" layoutY="309.0" prefHeight="108.0" prefWidth="76.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="312.20000000000005" AnchorPane.topAnchor="623.0">
+               <children>
+                  <Button fx:id="nResultButton1" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnEDSResultButon" text="Рассчитать" />
+                  <TextField fx:id="EDSResultField" editable="false" maxWidth="100.0" minWidth="100.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <Label alignment="CENTER" layoutX="29.0" layoutY="388.0" prefHeight="42.0" prefWidth="670.0" text="Рассчитать эффективное значение фотоЭДС" AnchorPane.leftAnchor="29.0" AnchorPane.rightAnchor="26.800000000000068" AnchorPane.topAnchor="388.0">
+               <font>
+                  <Font name="Droid Sans Mono" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER" layoutX="264.0" layoutY="430.0" prefHeight="143.0" prefWidth="196.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="262.20000000000005" AnchorPane.topAnchor="430.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@resources/images/EDS.JPG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" layoutX="30.0" layoutY="523.0" prefHeight="100.0" prefWidth="667.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="523.0">
+               <children>
+                  <Label text="U = ">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="UPhotoField" prefHeight="26.0" prefWidth="100.0" />
+                  <Label text=" В,  I = ">
+                     <font>
+                        <Font name="Droid Sans" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IPhotoTextField" prefHeight="26.0" prefWidth="112.0" />
+                  <Label text="отн.Ед">
+                     <font>
+                        <Font name="Droid Sans Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" layoutX="314.0" layoutY="288.0" prefHeight="108.0" prefWidth="76.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="312.20000000000005" AnchorPane.topAnchor="288.0">
+               <children>
+                  <Button fx:id="nResultButton11" alignment="CENTER" minWidth="100.0" mnemonicParsing="false" onMouseClicked="#clickOnhvResultButon" text="Рассчитать" />
+                  <TextField fx:id="hvResultField" editable="false" maxWidth="100.0" minWidth="100.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
    </children>
 </AnchorPane>
