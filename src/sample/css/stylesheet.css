@@ -7,9 +7,6 @@
 .buttonPhoto:hover{
 -fx-background-color:#000000;
 }
-.buttonPhoto:pressed{
--fx-background-color:#000000;
-}
 .buttonPressed{
 -fx-background-color:#000000;
 }

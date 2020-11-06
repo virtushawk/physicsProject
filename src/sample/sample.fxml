@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1600.0" prefWidth="900.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.photoButtonController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1800.0" prefWidth="900.0" stylesheets="@css/stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.photoButtonController">
    <children>
       <VBox prefHeight="576.0" prefWidth="174.0" styleClass="sidebar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -248,6 +248,10 @@
                         </TextField>
                      </children>
                   </VBox>
+                  <Label alignment="CENTER" layoutX="416.0" layoutY="1330.0" prefHeight="34.0" prefWidth="84.0" text="10^−19, м^-3" AnchorPane.leftAnchor="416.0" AnchorPane.rightAnchor="225.0" AnchorPane.topAnchor="1330.0">
+                     <font>
+                        <Font name="Droid Sans" size="12.0" />
+                     </font></Label>
                </children>
             </AnchorPane>
          </content>
