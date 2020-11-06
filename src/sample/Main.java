@@ -20,7 +20,7 @@ public class Main extends Application {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("sample.fxml"));
         Parent root = loader.load();
         primaryStage.setTitle("physicsProject");
-        primaryStage.setScene(new Scene(root, 800, 600));
+        primaryStage.setScene(new Scene(root, 900, 700));
         primaryStage.show();
 
 

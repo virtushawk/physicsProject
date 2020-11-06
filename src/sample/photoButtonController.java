@@ -2,6 +2,7 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
@@ -17,11 +18,17 @@ public class photoButtonController  {
     public TextField BTextField;
     public Button RResultButton;
     public TextField RResultTextField;
+    public TextField IproTextField;
+    public TextField aproTextField;
+    public TextField bproTextField;
+    public TextField RproTextField;
+    public Button proResultButton;
+    public TextField proResultTextField;
 
     @FXML
     AnchorPane photoView;
    @FXML
-   AnchorPane hollaView;
+   ScrollPane hollaView;
 
 
     public void clickOnPhotoButton(MouseEvent mouseEvent) {
